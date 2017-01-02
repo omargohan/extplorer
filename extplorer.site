@@ -9,7 +9,7 @@ server {
   # Path to the root of your installation
   root /var/www;
   
-  client_max_body_size 10M;
+  client_max_body_size 500M;
   fastcgi_buffers 64 4K;
   
   index index.php;
