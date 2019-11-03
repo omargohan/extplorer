@@ -49,7 +49,7 @@ ADD extplorer.site /etc/nginx/sites-enabled/extplorer.site
 
 # Install eXtplorer
 RUN mkdir -p /var/www/eXtplorer/
-RUN wget -qO /var/www/extplorer.zip "http://extplorer.net/attachments/download/57/eXtplorer_2.1.7.zip"
+RUN wget -qO /var/www/extplorer.zip "https://extplorer.net/attachments/82/eXtplorer_2.1.13.zip"
 RUN unzip /var/www/extplorer.zip -d  /var/www/eXtplorer/
 RUN chown -R www-data:www-data /var/www/eXtplorer
 RUN rm /var/www/extplorer.zip
@@ -68,4 +68,4 @@ RUN chmod -R +x /etc/service/ /etc/my_init.d/
 ##         EXPORTS AND VOLUMES         ##
 #########################################
 VOLUME ["/data"]
-EXPOSE 8088
+EXPOSE 8080
